@@ -338,3 +338,4 @@ você deve seguir a instrução acima e corrigir o erro reportado. Depois que os
 ### Referências
 
 [Dicas do livro Clean Code: Handbook of Agile Software Craftmanship](http://www.jeancarlomachado.com.br/post/visualizar/00053/dicas-do-livro-clean-code-handbook-of-agile-software-craftmanship)
+[PHP The Right Way](http://www.phptherightway.com/)
