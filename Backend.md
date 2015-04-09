@@ -1,6 +1,8 @@
 
 ### Geral
 
+As regras são baseadas no PSR-2. Não havendo algo relacionado aqui deve-se respeitar o que consta na [https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md](PSR-2)
+
 - Arquivos DEVEM usar apenas <?php 
 
 - Todos os arquivos devem ser salvos na codificação UTF-8. Configurar editores e IDEs usadas para salvar desta forma.
