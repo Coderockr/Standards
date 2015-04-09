@@ -1,7 +1,7 @@
 
 ### Geral
 
-As regras são baseadas no PSR-2. Não havendo algo relacionado aqui deve-se respeitar o que consta na [https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md](PSR-2)
+As regras são baseadas no PSR-2. Não havendo algo relacionado aqui deve-se respeitar o que consta na [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)
 
 - Arquivos DEVEM usar apenas <?php 
 
@@ -333,3 +333,8 @@ O phpcs pode ser incluído no processo de pre-commit, então ele vai será execu
 	265 | ERROR | The closing brace for the class must go on the next line after | | the body
 
 você deve seguir a instrução acima e corrigir o erro reportado. Depois que os erros reportados forem corrigidos você pode tentar o commit novamente e ele funcionará.
+
+
+### Referências
+
+[Dicas do livro Clean Code: Handbook of Agile Software Craftmanship](http://www.jeancarlomachado.com.br/post/visualizar/00053/dicas-do-livro-clean-code-handbook-of-agile-software-craftmanship)
