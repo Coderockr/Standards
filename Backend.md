@@ -15,7 +15,7 @@ As regras são baseadas no PSR-2. Não havendo algo relacionado aqui deve-se res
 
 - Cada classe DEVE estar em um arquivo separado e DEVE existir uma declaração de namespace
 
-- Constantes de clase DEVEM ser declaradas em maiúsculas e com underscore como separador. Exemplo: PAYMENT_TYPE
+- Constantes de classe DEVEM ser declaradas em maiúsculas e com underscore como separador. Exemplo: PAYMENT_TYPE
 
 - Nomes de métodos DEVEM ser declarados em camelCase. Exemplo: getPaymentMode
 
@@ -27,7 +27,7 @@ As regras são baseadas no PSR-2. Não havendo algo relacionado aqui deve-se res
 
 - DEVE ter uma linha em branco depois da declaração do namespace e DEVE ter uma linha em branco depois do bloco de declaração dos uses
 
-- PREFERINCIALMENTE optar por cláusulas feitas através do Query builder em detrimeto à DQL
+- PREFERENCIALMENTE optar por cláusulas feitas através do Query builder em detrimeto à DQL
 
 - Nenhum arquivo PHP deve lançar exceções, warnings, strict standards ou notices
 
