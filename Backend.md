@@ -9,7 +9,7 @@ As regras são baseadas no PSR-2. Não havendo algo relacionado aqui deve-se res
 
 - Todos os arquivos PHP DEVEM terminar com uma linha em branco
 
-- A tag de fechamento ?> DEVE ser omitida em arquivos que contém apenas PHP
+- A tag de fechamento ?> DEVE ser omitida em arquivos que contém apenas código PHP
 
 - Nomes de classes DEVEM ser declaradas no formato StudlyCaps.  Exemplo: RestController
 
@@ -19,7 +19,7 @@ As regras são baseadas no PSR-2. Não havendo algo relacionado aqui deve-se res
 
 - Nomes de métodos DEVEM ser declarados em camelCase. Exemplo: getPaymentMode
 
-- Código DEVE usar 4 espaços para indentação e não tabs.
+- Código DEVE usar 4 espaços para indentação e não tabs
 
 - Linhas PREFERENCIALMENTE precisam ter 80 caracteres ou menos
 
@@ -50,7 +50,7 @@ use Core\Service\ParameterFactory,
 ```
 
 - As declarações de use DEVEM vir após a declaração da namespace
-- Toda a lista com múltiplas entradas as quais a ordem não importa para o funcionamento deve ser ordenada alfabeticamente. Inclusive namespaces.
+- Toda a lista com múltiplas entradas as quais a ordem não importa para o funcionamento deve ser ordenada alfabeticamente, inclusive namespaces.
 - As chaves de abertura e fechamento da classe DEVEM ser em novas linhas. Exemplo:
 
 ```
@@ -315,7 +315,7 @@ Descrever o que faz o método, seus parâmetros (com tipo e descrição)  e o re
 
 ## Comentários gerais
 
-Trechos de código complexos devem ser documentados, podendo-se usar comentários de uma linha (//) ou de múltiplas linhas (/* e */)
+Trechos de código complexos devem ser documentados, podendo-se usar comentários de uma linha (``//``) ou de múltiplas linhas (``/*`` e ``*/``)
 
 ## PHP Code Sniffer
 
@@ -325,17 +325,18 @@ Para analisar o estilo de programação é possível usar o comando como no exem
 
 Também é possível configurar as IDEs de desenvolvimento para fazer isso automaticamente, como o Eclipse e o [PhpStorm](https://confluence.jetbrains.com/display/PhpStorm/PHP+Code+Sniffer+in+PhpStorm#PHPCodeSnifferinPhpStorm-InstallingviaComposer)
 
-O phpcs pode ser incluído no processo de pre-commit, então ele vai será executado durante o fluxo normal de desenvolvimento. Quando for fazer um commit, caso ele falhe e você receba uma mensagem como: 
+O phpcs pode ser incluído no processo de pre-commit, então ele será executado durante o fluxo normal de desenvolvimento. Quando for fazer um commit, caso ele falhe e você receba uma mensagem como: 
 
 	Running Code Sniffer... E.
 	FILE: ...jects/clipp/Backend/module/Application/src/Application/	Service/User.php
 	FOUND 1 ERROR(S) AFFECTING 1 LINE(S)
 	265 | ERROR | The closing brace for the class must go on the next line after | | the body
 
-você deve seguir a instrução acima e corrigir o erro reportado. Depois que os erros reportados forem corrigidos você pode tentar o commit novamente e ele funcionará.
+Você deverá seguir a instrução acima e corrigir o erro reportado. Depois que os erros reportados forem corrigidos você pode tentar o commit novamente e ele funcionará.
 
 
 ### Referências
 
 [Dicas do livro Clean Code: Handbook of Agile Software Craftmanship](http://www.jeancarlomachado.com.br/post/visualizar/00053/dicas-do-livro-clean-code-handbook-of-agile-software-craftmanship)
+
 [PHP The Right Way](http://www.phptherightway.com/)
