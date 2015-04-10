@@ -15,7 +15,7 @@ As regras são baseadas no PSR-2. Não havendo algo relacionado aqui deve-se res
 
 - Cada classe DEVE estar em um arquivo separado e DEVE existir uma declaração de namespace
 
-- Constantes de clase DEVEM ser declaradas em maiúsculas e com underscore como separador. Exemplo: PAYMENT_TYPE
+- Constantes de classe DEVEM ser declaradas em maiúsculas e com underscore como separador. Exemplo: PAYMENT_TYPE
 
 - Nomes de métodos DEVEM ser declarados em camelCase. Exemplo: getPaymentMode
 
