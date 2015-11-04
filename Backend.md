@@ -296,13 +296,14 @@ Sempre colocar uma descrição do motivo da variável existir e o tipo da variá
 ```
 #!php
 /**
-    * Atualiza uma entidade
-    *
-    * @param  int   $id   O código da entidade a ser atualizada
-    * @param  array $data Os dados sendo alterados
-    * @return array       Retorna a entidade atualizada
-*/
-public function update($id, $data) {
+ * Atualiza uma entidade
+ *
+ * @param  int   $id   O código da entidade a ser atualizada
+ * @param  array $data Os dados sendo alterados
+ * @return array       Retorna a entidade atualizada
+ */
+public function update($id, $data) 
+{
 	$data = array_merge($this->get($id), $data);
  	$this->getTableObject()->setData($data);
  	return $this->getTableGateway()
