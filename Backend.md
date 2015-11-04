@@ -45,7 +45,7 @@ Exemplo ERRADO:
 ```
 #!php
 use Core\Service\ParameterFactory,
-	Core\Service\ParameterSet,
+    Core\Service\ParameterSet,
 	Core\Service\Service;
 ```
 
@@ -243,12 +243,12 @@ use Zend\InputFilter\InputFilterInterface;
 use Core\Model\Entity;
 
 /**
-* Entidade token
-*
-* @category Api
-* @package Model
-* @author  Elton Minetto<eminetto@coderockr.com>
-*/
+ * Entidade token
+ *
+ * @category Api
+ * @package Model
+ * @author  Elton Minetto<eminetto@coderockr.com>
+ */
 class Token extends Entity
 {
 ```
@@ -268,13 +268,13 @@ Exemplo:
 namespace Core\Authentication\Adapter\Exception;
 
 /**
-* Descrição da classe
-*
-* @category Core
-* @package Authentication
-* @subpackage Adapter\Exception
-* @author  Elton Minetto<eminetto@coderockr.com>
-*/
+ * Descrição da classe
+ *
+ * @category Core
+ * @package Authentication
+ * @subpackage Adapter\Exception
+ * @author  Elton Minetto<eminetto@coderockr.com>
+ */
 ```
 
 ## Variáveis
@@ -282,10 +282,10 @@ namespace Core\Authentication\Adapter\Exception;
 ```
 #!php
 /**
-  * Table Gateway usado para manipular as entidades
-  *
-  * @var Core\Db\TableGateway
-  */
+ * Table Gateway usado para manipular as entidades
+ *
+ * @var Core\Db\TableGateway
+ */
 protected $tableGateway;
 
 ```
