@@ -45,7 +45,7 @@ Exemplo ERRADO:
 ```
 #!php
 use Core\Service\ParameterFactory,
-	Core\Service\ParameterSet,
+    Core\Service\ParameterSet,
 	Core\Service\Service;
 ```
 
@@ -243,12 +243,12 @@ use Zend\InputFilter\InputFilterInterface;
 use Core\Model\Entity;
 
 /**
-* Entidade token
-*
-* @category Api
-* @package Model
-* @author  Elton Minetto<eminetto@coderockr.com>
-*/
+ * Entidade token
+ *
+ * @category Api
+ * @package Model
+ * @author  Elton Minetto<eminetto@coderockr.com>
+ */
 class Token extends Entity
 {
 ```
@@ -268,13 +268,13 @@ Exemplo:
 namespace Core\Authentication\Adapter\Exception;
 
 /**
-* Descrição da classe
-*
-* @category Core
-* @package Authentication
-* @subpackage Adapter\Exception
-* @author  Elton Minetto<eminetto@coderockr.com>
-*/
+ * Descrição da classe
+ *
+ * @category Core
+ * @package Authentication
+ * @subpackage Adapter\Exception
+ * @author  Elton Minetto<eminetto@coderockr.com>
+ */
 ```
 
 ## Variáveis
@@ -282,10 +282,10 @@ namespace Core\Authentication\Adapter\Exception;
 ```
 #!php
 /**
-  * Table Gateway usado para manipular as entidades
-  *
-  * @var Core\Db\TableGateway
-  */
+ * Table Gateway usado para manipular as entidades
+ *
+ * @var Core\Db\TableGateway
+ */
 protected $tableGateway;
 
 ```
@@ -296,13 +296,14 @@ Sempre colocar uma descrição do motivo da variável existir e o tipo da variá
 ```
 #!php
 /**
-    * Atualiza uma entidade
-    *
-    * @param  int   $id   O código da entidade a ser atualizada
-    * @param  array $data Os dados sendo alterados
-    * @return array       Retorna a entidade atualizada
-*/
-public function update($id, $data) {
+ * Atualiza uma entidade
+ *
+ * @param  int   $id   O código da entidade a ser atualizada
+ * @param  array $data Os dados sendo alterados
+ * @return array       Retorna a entidade atualizada
+ */
+public function update($id, $data) 
+{
 	$data = array_merge($this->get($id), $data);
  	$this->getTableObject()->setData($data);
  	return $this->getTableGateway()
