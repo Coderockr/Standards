@@ -7,6 +7,8 @@ As regras são baseadas no PSR-2. Não havendo algo relacionado aqui deve-se res
 
 - Todos os arquivos devem ser salvos na codificação UTF-8. Configurar editores e IDEs usadas para salvar desta forma.
 
+- Deve-se utilizar sempre que possível o support a type hinting e return types adicionado no PHP 7
+
 - Todos os arquivos PHP DEVEM terminar com uma linha em branco
 
 - A tag de fechamento ?> DEVE ser omitida em arquivos que contém apenas código PHP
