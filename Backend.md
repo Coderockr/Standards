@@ -335,6 +335,21 @@ O phpcs pode ser incluído no processo de pre-commit, então ele será executado
 
 Você deverá seguir a instrução acima e corrigir o erro reportado. Depois que os erros reportados forem corrigidos você pode tentar o commit novamente e ele funcionará.
 
+## Suporte ao PHP 7
+
+Deve-se utilizar sempre que possível o support a type hinting e return types adicionado no PHP 7:
+
+```
+public function getToken(): string
+{
+    return $this->token;
+}
+
+public function setToken(string $token)
+{
+    $this->token = $token;
+}
+```
 
 ### Referências
 
