@@ -33,8 +33,7 @@ As regras são baseadas no PSR-2. Não havendo algo relacionado aqui deve-se res
 
 - DEVE existir apenas um use por declaração. Exemplo correto:
 
-```
-#!php
+```php
 use Core\Service\ParameterFactory;
 use Core\Service\ParameterSet;
 use Core\Service\Service;
@@ -42,8 +41,7 @@ use Core\Service\Service;
 
 Exemplo ERRADO:
 
-```
-#!php
+```php
 use Core\Service\ParameterFactory,
     Core\Service\ParameterSet,
 	Core\Service\Service;
@@ -53,8 +51,7 @@ use Core\Service\ParameterFactory,
 - Toda a lista com múltiplas entradas as quais a ordem não importa para o funcionamento deve ser ordenada alfabeticamente, inclusive namespaces.
 - As chaves de abertura e fechamento da classe DEVEM ser em novas linhas. Exemplo:
 
-```
-#!php
+```php
 class Auth extends Service
 {
 	//código
@@ -63,8 +60,7 @@ class Auth extends Service
 
 - As chaves de abertura e fechamento de métodos DEVEM ser em novas linhas. Exemplo:
 
-```
-#!php
+```php
 public function authenticate(ParameterSet $params)
 {   
 	//código
@@ -75,8 +71,7 @@ public function authenticate(ParameterSet $params)
 
 - As chaves de abertura de estruturas de controle DEVEM ser na mesma linha, as de fechamento devem ser em nova linha. Parênteses de abertura de estruturas de controle NÃO DEVE ter espaços depois e o de fechamento NÃO DEVE ter espaços antes.  Exemplo:
 
-```
-#!php
+```php
 if (count($user)==0) {
 	throw new Exception("Login ou senha inválidos");
 }    
@@ -86,9 +81,7 @@ if (count($user)==0) {
 
 - As palavras chave extends e implements DEVEM ser declaradas na mesma linha do nome da classe. Exemplo:
 
-```
-#!php
-
+```php
 <?php
 namespace Vendor\Package;
 
@@ -106,9 +99,7 @@ class ClassName extends ParentClass implements \ArrayAccess, \Countable
 
 - Nomes de variáveis, métodos e classes devem ser em inglês. Exemplos:
 
-```
-#!php
-
+```php
 $filter = $this->getFilter();
 $client = $this->getClient();
 ```
@@ -119,8 +110,7 @@ $client = $this->getClient();
 
 - A declaração de um método deve se parecer com o exemplo abaixo. Note a localização dos parênteses, espaços e chaves:
 
-```
-#!php
+```php
 <?php
 namespace Vendor\Package;
 
@@ -141,8 +131,7 @@ Nos exemplos a seguir observar a posição de espaços, vírgulas e parênteses.
 
 ## if, elseif, else
 
-```
-#!php
+```php
 <?php
 if ($expr1) {
     // if body
@@ -155,8 +144,7 @@ if ($expr1) {
 
 ## switch, case
 
-```
-#!php
+```php
 <?php
 switch ($expr) {
     case 0:
@@ -178,8 +166,7 @@ switch ($expr) {
 
 ## while, do while
 
-```
-#!php
+```php
 <?php
 while ($expr) {
     // structure body
@@ -193,8 +180,7 @@ do {
 
 ## for
 
-```
-#!php
+```php
 <?php
 for ($i = 0; $i < 10; $i++) {
     // for body
@@ -203,8 +189,7 @@ for ($i = 0; $i < 10; $i++) {
 
 ## foreach
 
-```
-#!php
+```php
 <?php
 foreach ($iterable as $key => $value) {
     // foreach body
@@ -213,8 +198,7 @@ foreach ($iterable as $key => $value) {
 
 ## try, catch
 
-```
-#!php
+```php
 <?php
 try {
     // try body
@@ -231,8 +215,7 @@ Todas as classes e métodos devem ser documentados de acordo com o padrão phpDo
 
 ## Classes
 
-```
-#!php
+```php
 <?php
 namespace Api\Model;
 
@@ -262,9 +245,7 @@ Sendo:
 
 Exemplo:
 
-```
-#!php
-
+```php
 namespace Core\Authentication\Adapter\Exception;
 
 /**
@@ -279,8 +260,7 @@ namespace Core\Authentication\Adapter\Exception;
 
 ## Variáveis
 
-```
-#!php
+```php
 /**
  * Table Gateway usado para manipular as entidades
  *
@@ -293,8 +273,7 @@ Sempre colocar uma descrição do motivo da variável existir e o tipo da variá
 
 ## Métodos
 
-```
-#!php
+```php
 /**
  * Atualiza uma entidade
  *
@@ -339,7 +318,7 @@ Você deverá seguir a instrução acima e corrigir o erro reportado. Depois que
 
 Deve-se utilizar sempre que possível o support a type hinting e return types adicionado no PHP 7:
 
-```
+```php
 public function getToken(): string
 {
     return $this->token;
