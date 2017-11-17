@@ -1,17 +1,17 @@
-###Regras gerais
+### Regras gerais
  - Evitar artigos the, of, a, etc.
  - Evitar CamelCase
  - Evitar CAIXA ALTA
  - Abreviar quando não houver perda semântica
  - Os componentes da URI, quando compostos por mais de uma palavra, devem ser separados por underline ``_``
 
-####Estrutura da URI:
+#### Estrutura da URI:
 
 ```
 modulo.verbo[-escopo][-entidade].formato
 ``` 
 
-####Componentes da URI
+#### Componentes da URI
 1. modulo: o módulo do serviço (gerado automaticamente)
 2. verbo: o que será feito; quando possível, utilizar verbos HTTP (put, delete, post, get)
 3. escopo: (opcional), o que se pretende atingir com o verbo
@@ -19,7 +19,7 @@ modulo.verbo[-escopo][-entidade].formato
 5. formato: json, xml (gerado automaticamente)
  
 
-###Exemplos:
+### Exemplos:
 
 1.   ``aplication.authenticate.json`` : escopo e entidade foram omitidos por simplicidade; foi utilizando authenticate como verbo pois nenhum dos verbos HTTP se enquadra perfeitamente
 2.   ``aplication.get-client.xml``: (retorna o cliente de um usuário) a entidade foi omitida por simplicidade - provavelmente não haverá um get-client para outra coisa senão retornar o cliente de um usuário. O modo extendido ficaria: ``get-client-user``
